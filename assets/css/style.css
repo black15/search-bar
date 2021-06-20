@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(blue,darkblue);
+}
+.search {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    transition: .4s;
+    /* box-shadow: 1px 1px 1px 1px black; */
+    overflow: hidden;
+    
+}
+.search .icon {
+    /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAWpJREFUSEvFlY0xBEEQhe8iIIQVASJwMiAClwEiQQROBkTgMiADKwMi4H2qW7UxP3tlrkxV19zN9rz3+k3v7Hy25THfMv6sRjCI/FyxUByYkGfNa8WNYpwirkRwbeA1DHIuWyQ5AlTu28Y7zQCxxqCSC8VZqOiwRpISuPJ3s8aBUwyIsGrH7II0OyLBoIwXy0IV4LuKKyPjEaDY8mbVPFn+nuYxxxAJXD0H6IqW+n2bbAQcQOaVArvinh/pkcC9d/WeeGLV8B/AI8WDgnWsogr2Zs8iEnwYYqt1sRE7qIJR3bcpQeLWZgQli3KgvuYWvWphyCW2DrkG7mcy+ZBRkLbpFPXkTGpTEr1VacFj644cCdY8KnhPii3KxtZVsTKAeFVwAS4DK88Qg6hf4y+XHcoXCu6tIkmr53mjHQR1dMu9WTmaResaSY8PDudQJOlBQGWR5NSq/DqPXgROgp1Y+D16EmR6qG8F/0PwCQ/XUxkKqEYIAAAAAElFTkSuQmCC") */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("./search.jpg");
+    transform: rotate(270deg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 27px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+.search.active {
+    width: 350px;
+    border-top-right-radius: 10vh;
+    border-top-left-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+    border-bottom-left-radius: 10vh;
+}
+.search .input {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+}
+.search .input input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: navajowhite;
+    font-size: 18px;
+    padding: 10px;
+}
+.clear {
+    position: absolute;
+    top: 30%;
+    transform: translateX(320px);
+    width: 30px;
+    height: 42%;
+    background-image: url('./x.png');
+    background-position: center;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-color: white;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
