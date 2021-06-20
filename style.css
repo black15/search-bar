@@ -71,12 +71,13 @@ body {
     position: absolute;
     top: 30%;
     transform: translateX(320px);
-    width: 22px;
+    width: 30px;
     height: 42%;
     background-image: url('./x.png');
     background-position: center;
     background-size: 18px;
     background-repeat: no-repeat;
+    background-color: white;
     cursor: pointer;
     align-items: center;
     justify-content: center;
